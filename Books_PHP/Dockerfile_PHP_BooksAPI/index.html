@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple jQuery Web Service Client</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/webservicedemo.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <script src="Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Web Service Example</a>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div class="row">
+            <div class="col-md-12">
+                &nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="button" value="Get All Books" class="btn btn-sm btn-primary" onclick="getAllBooks();" />
+                &nbsp;
+                <input type="button" value="Add New Book" class="btn btn-sm btn-primary" onclick="createNewBookForm();" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                &nbsp;
+            </div>
+        </div>
+        <div id="allbooks" class="row">
+        </div>
+        <div id="newbookform" class="row">
+        </div>
+
+        <footer>
+            <p>&copy; 2019 - University of Derby</p>
+        </footer>
+    </div>
+</body>
+</html>

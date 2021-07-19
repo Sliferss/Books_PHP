@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  booksapi:
+    build: ./Dockerfile_PHP_BooksAPI
+    ports:
+      - 80:80
+    environment:      
+      DBSERVER: booksmysql
+      DBPASS: my-secret-pw
+    depends_on:
+      - booksmysql
+  booksmysql:
+    build: ./Dockerfile_MYSQL
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw 
+    volumes:
+      - mysql-volume:/var/lib/mysql
+    
+volumes:
+  mysql-volume:
